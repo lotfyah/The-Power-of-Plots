@@ -1,2 +1,2 @@
 # matplotlib_challange
-designated for matplotlib HW
+designated for matplotlib homework
