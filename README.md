@@ -1,36 +1,80 @@
-## Instructions
+# The Power of Plots
 
-Your tasks are to do the following:
 
-* Before beginning the analysis, check the data for duplicate mice and remove any data associated with that mouse ID.
+![Capture0](Images/Capture0.jpg)
 
-* Generate a summary statistics table consisting of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen.
+## Background
+This respository apply a Python Matplotlib to visualize a real-world pharmaceutical data. The data is sourced from Pymaceuticals Inc., a burgeoning pharmaceutical company based out of San Diego. Pymaceuticals specializes in anti-cancer pharmaceuticals. In its most recent efforts, it began screening for potential treatments for squamous cell carcinoma (SCC), a commonly occurring form of skin cancer.
 
-* Generate a bar plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows  the number of mice per time point for each treatment regimen throughout the course of the study.
 
-  * **NOTE:** These plots should look identical.
+The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. The analysis also generated all of the table and figures needed for the technical, and top-level summary report of the study. For this analysis both datasets imported, merged,cleaned and the aggregate data diplayed in to Python Pandas dataframes, visualized in Matplotlib, and other libraries used in order to make a stastical analysis. The project is conducted in Jupyter notebook to showcase, and communicate the analysis report the following link is created: [Jupyter Notebook Viewer](https://github.com/lotfyah/The-Power-of-Plots/blob/master/pymaceuticals_starter.ipynb) 
 
-* Generate a pie plot using both Pandas's `DataFrame.plot()` and Matplotlib's `pyplot` that shows the distribution of female or male mice in the study.
+## Observable Trends
 
-  * **NOTE:** These plots should look identical.
+* The bar graph showed the Drug Regimen Capomulin has the maximum mice number (240), and Propriva has the smaller mice number (155).By removing duplicates the total number of mice is 248. The total count of mice by gender also showed that 124 female mice and 125 male mice.
+* The correlation between mouse weight, and average tumor volume is 0.841. It is a strong positive correlation, when the mouse weight increases the average tumor volume also increases.
 
-* Calculate the final tumor volume of each mouse across four of the most promising treatment regimens: Capomulin, Ramicane, Infubinol, and Ceftamin. Calculate the quartiles and IQR and quantitatively determine if there are any potential outliers across all four treatment regimens.
+*  From the selected treatments Capomulin and Ramicane reduces the size of tumors better.
 
-* Using Matplotlib, generate a box and whisker plot of the final tumor volume for all four treatment regimens and highlight any potential outliers in the plot by changing their color and style.
 
-  **Hint**: All four box plots should be within the same figure. Use this [Matplotlib documentation page](https://matplotlib.org/gallery/pyplots/boxplot_demo_pyplot.html#sphx-glr-gallery-pyplots-boxplot-demo-pyplot-py) for help with changing the style of the outliers.
+## Solutions
 
-* Generate a line plot of time point versus tumor volume for a single mouse treated with Capomulin.
+## Data Cleaning
+* The data was loaded, read, combined, duplicate removed, and the head (5 rows on the top) of cleaned data out put looks as follows
 
-* Generate a scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen.
+![Capture1](Images/Capture1.jpg)
 
-* Calculate the correlation coefficient and linear regression model between mouse weight and average tumor volume for the Capomulin treatment. Plot the linear regression model on top of the previous scatter plot.
+## Summary statistics
 
-* Look across all previously generated figures and tables and write at least three observations or inferences that can be made from the data. Include these observations at the top of notebook.
+* A summary statistics table was generated. The summery statistic table consis the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen. The summery stastics tables looks as follws:
 
-Here are some final considerations:
+![Capture2](Images/Capture2.jpg)
+  
+## Bar Charts
+  
+* Two identical bar charts was generated that shows  the number of total mice for each treatment regimen throughout the course of the study.
 
-* You must use proper labeling of your plots, to include properties such as: plot titles, axis labels, legend labels, _x_-axis and _y_-axis limits, etc.
+  The Bar Cahrts looks as follows:
 
-* See the [starter workbook](Pymaceuticals/pymaceuticals_starter.ipynb) for help on what modules to import and expected format of the notebook.
+#### Bar Chart on the Number of Mice per Treatment 
+![Pandas's `DataFrame.plot()`](Images/Capture3.jpg)
+
+#### Bar Chart on the Number of Mice per Treatment 
+![Matplotlib's `pyplot`](Images/Capture4.jpg)
+
+## Pie Chart
+
+#### the distribution of female or male mice in the study 
+![Pandas's `DataFrame.plot()`](Images/Capture5.jpg)
+
+
+
+## Box and Whisker Plot
+
+* A box and whisker plot of the final tumor volume for all four treatment regimens was generated, and a potential outliers highlighted by using color, and style.
+
+A box and whisker plot looks as follws:
+![Ceftamin outliers_upper and lower_bounds](Images/Capture7.jpg)
+
+## Line and Scatter Plots
+###  Line Plot
+* A line plot created on selected mouse (`s185`) that was treated with Capomulin, and generate a line plot of time point versus tumor volume for that mouse.
+
+   A line plot looks as follws:
+![Line Plot](Images/Capture8.jpg)
+
+
+###  Scatter Plot
+* A scatter plot of mouse weight versus average tumor volume for the Capomulin treatment regimen was created. 
+
+   A scatter plot looks as follws:
+![Scatter Plot](Images/Capture9.jpg)
+
+## Correlation and Regression
+
+* A correlation coefficient, and linear regression analysis was conducted  between mouse weight and average tumor volume for the Capomulin treatment. A Plot of the linear regression model created on top of the previous scatter plot.
+
+
+   A linear regression plot looks as follws:
+![linear_regression plot](Images/Capture10.jpg)
 
