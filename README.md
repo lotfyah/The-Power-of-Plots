@@ -9,7 +9,7 @@ This respository apply a Python Matplotlib to visualize a real-world pharmaceuti
 
 The purpose of this study was to compare the performance of Pymaceuticals' drug of interest, Capomulin, versus the other treatment regimens. The analysis also generated all of the table and figures needed for the technical, and top-level summary report of the study. For this analysis both datasets imported, merged,cleaned and the aggregate data diplayed in to Python Pandas dataframes, visualized in Matplotlib, and other libraries used in order to make a stastical analysis. The project is conducted in Jupyter notebook to showcase, and communicate the analysis report the following link is created: [Jupyter Notebook Viewer](https://github.com/lotfyah/The-Power-of-Plots/blob/master/pymaceuticals_starter.ipynb) 
 
-## Observable Trends
+## Observations
 
 * The bar graph showed the Drug Regimen Capomulin has the maximum mice number (240), and Propriva has the smaller mice number (155).By removing duplicates the total number of mice is 248. The total count of mice by gender also showed that 124 female mice and 125 male mice.
 * The correlation between mouse weight, and average tumor volume is 0.841. It is a strong positive correlation, when the mouse weight increases the average tumor volume also increases.
@@ -17,16 +17,14 @@ The purpose of this study was to compare the performance of Pymaceuticals' drug 
 *  From the selected treatments Capomulin and Ramicane reduces the size of tumors better.
 
 
-## Solutions
-
 ## Data Cleaning
 * The data was loaded, read, combined, duplicate removed, and the head (5 rows on the top) of cleaned data out put looks as follows
 
 ![Capture1](images/Capture1.JPG)
 
-## Summary statistics
+## Statistics
 
-* A summary statistics table was generated. The summery statistic table consis the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen. The summery stastics tables looks as follws:
+* The summary statistic table consists of the mean, median, variance, standard deviation, and SEM of the tumor volume for each drug regimen. The summery stastics tables looks as follws:
 
 ![Capture2](images/Capture2.JPG)
   
@@ -72,9 +70,7 @@ A box and whisker plot looks as follws:
 
 ## Correlation and Regression
 
-* A correlation coefficient, and linear regression analysis was conducted  between mouse weight and average tumor volume for the Capomulin treatment. A Plot of the linear regression model created on top of the previous scatter plot.
+* A correlation coefficient, and linear regression analysis was conducted  between mouse weight and average tumor volume for the Capomulin treatment. 
 
-
-   A linear regression plot looks as follws:
 ![Capture10](images/Capture10.JPG)
 
